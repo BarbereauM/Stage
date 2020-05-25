@@ -1,0 +1,180 @@
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2f2fa2;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #2f2fa2;
+  }
+  
+  li a:hover {
+    background-color: #242582;
+  }
+
+  .active:hover {
+    background-color: #553d67;
+  }
+  .active {
+    background-color: #f64c72;
+  }
+
+  li {
+    border-right: 1px solid rgba(255, 255, 255, 0);
+  }
+  
+  li:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    float: right;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+
+.article {
+    display: inline-block;
+}
+
+.mainlorem {
+  border: 3mm ridge #f64c72;
+  width: 700px;
+  height: 785px;
+  float: right;
+  margin-right: 300px;
+  border-radius: 3px;
+}
+
+.txtmain {
+  padding-top: 350px;
+  text-align: center;
+}
+
+.text0 {
+  border: 10px solid #f64c72;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: auto;
+  margin-left: 50px;
+}
+
+.text0 h2 {
+  text-align: center;
+}
+
+.text1 {
+  border: 10px solid #f64c72;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: auto;
+  margin-left: 50px;
+}
+
+.text1 h2 {
+  text-align: center;
+}
+
+.text2 {
+  border: 10px solid #f64c72;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: auto;
+  margin-left: 50px;
+}
+
+.text2 h2 {
+  text-align: center;
+}
+
+.hide0 {
+  display: none;
+}
+
+.test0:hover + .hide0 {
+  display: block;
+}
+
+.hide1 {
+  display: none;
+}
+
+.test1:hover + .hide1 {
+  display: block;
+}
+
+.hide2 {
+  display: none;
+}
+
+.test2:hover + .hide2 {
+  display: block;
+}
+
+.social{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.social a{
+	display: inline-block;
+	padding: 5px;
+
+}
+.social a i{
+	color: #3b1e59;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 50px!important;
+    border: 3px solid #fff;
+	opacity: .8;
+transition-property: transform;
+    -moz-transition-property: -moz-transform;
+    -webkit-transition-property: -webkit-transform;
+    transition: all 0.6s cubic-bezier(0.88, -0.48, 0.38, 1.85);
+	border-radius: 50%;
+	
+	}
+.social a i:hover{
+	opacity: 1;
+	border-radius: 20%;
+	
+}
+.social a:hover i.fa-linkedin-in{
+	transition:  .6s ease-in;
+	background: #0088cc; 
+	color: white;
+	border: 3px solid #00aaff; 
+	
+transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.social a:hover i.fa-github{
+	transition:  .6s ease-in;
+	background: rgb(0, 0, 0); 
+	color:white;
+	border: 3px solid #3a3838;
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); 
+}

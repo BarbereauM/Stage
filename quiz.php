@@ -72,7 +72,7 @@
                 
                 </li>
                 
-                <li>
+                <li style="margin-right: 285px">
                 
                     <h3>je sais pas encore</h3>
                     
@@ -104,5 +104,22 @@
         
         </form>
     </div>
+
+    <footer>
+        <small>&copy; Copyright 2020, BARBEREAU Maxime</small>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+            <section class="social">
+			    <a href="https://github.com/BarbereauM" target="_blank">
+				    <i class="fab fa-github"></i>
+                </a>
+            
+			    <a href="https://www.linkedin.com/in/maxime-barbereau-b34843194/" target="_blank">
+				    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </section>
+          
+    </footer>
+
 </body>
 </html>

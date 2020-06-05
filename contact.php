@@ -8,13 +8,13 @@
 </head>
 <header>
         <ul>
-            <li><a class="active" href="home.php">Acceuil</a></li>
+            <li><a class="active" href="index.php">Acceuil</a></li>
             <li><a href="quiz.php">Quiz</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
 </header>
 <body>
-    <form method="post">
+    <form method="POST" action="">
 
         <label>Email</label>
         <input type="email" name="email" required><br>
@@ -27,16 +27,19 @@
     </form>
 
     <?php
-    if (isset($_POST['message'])) {
-        $position_arobase = strpos($_POST['email'], '@');
-        if ($position_arobase === false)
-            echo '<p>Votre email doit comporter un arobase.</p>';
-        else {
-            $retour = mail('barbereau.maxime@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
-            if($retour)
-                echo '<p>Votre message a été envoyé.</p>';
-            else
-                echo '<p>Erreur.</p>';
+    ini_set("sendmail_from","barbereau.maxime@gmail.com");
+    if(isset($_POST['message'])){
+        $entete  = 'MIME-Version: 1.0' . "\r\n";
+        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        $entete .= 'From: ' . $_POST['email'] . "\r\n";
+
+        $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+        <b>Email : </b>' . $_POST['email'] . '<br>
+        <b>Message : </b>' . $_POST['message'] . '</p>';
+
+        $retour = mail('barbereau.maxime@fgmail.com', 'Envoi depuis page Contact', $message, $entete);
+        if($retour) {
+            echo '<p>Votre message a bien été envoyé.</p>';
         }
     }
     ?>

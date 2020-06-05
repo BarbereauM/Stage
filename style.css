@@ -73,8 +73,11 @@ html {
 }
 
 .txtmain {
-  padding-top: 350px;
+  font-size: 1.2em;
+  display: flex;
+  margin-top: 720px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.726);
 }
 
 .text0 {
@@ -130,29 +133,32 @@ html {
 
 .hide0 {
   display: none;
-  color: #00aaff;
+  color: #2f2fa2;
 }
 
 .test0:hover + .hide0 {
   display: block;
+  background-color: rgba(255, 255, 255, 0.726);
 }
 
 .hide1 {
   display: none;
-  color: #00aaff;
+  color: #2f2fa2;
 }
 
 .test1:hover + .hide1 {
   display: block;
+  background-color: rgba(255, 255, 255, 0.726);
 }
 
 .hide2 {
   display: none;
-  color: #00aaff;
+  color: #2f2fa2;
 }
 
 .test2:hover + .hide2 {
   display: block;
+  background-color: rgba(255, 255, 255, 0.726);
 }
 
 .test0 ,.test1 ,.test2 {
@@ -167,6 +173,10 @@ footer {
   bottom:0;
   left:0;
   top: 1000px;
+}
+
+small {
+  float: inherit;45 artcile pour 540 point niveau plat pour 80,4
 }
 
 .social{
@@ -214,6 +224,17 @@ transition-property: transform;
 	border: 3px solid #3a3838;
 	transform: rotate(360deg);
     -webkit-transform: rotate(360deg); 
+}
+
+@media screen and (max-width: 1366px)
+{
+  .text0, .text1, .text2 {
+    margin-left: 530px;
+  }
+
+  footer {
+    top: 2000px;
+  }
 }
 
 
